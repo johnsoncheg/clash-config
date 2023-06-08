@@ -94,9 +94,11 @@ dns:
      #- https://dns.rubyfish.cn/dns-query
      #- https://cloudflare-dns.com/dns-query
      #- https://dns.google/dns-query
-     - tls://b.iqiq.io:853              # iQDNS DoT
-     - https://i.233py.com/dns-query    # GEEKDNS China DoH
-     - https://doh.opendns.com/dns-query # OpenDNS DoH
+     #- tls://b.iqiq.io:853              # iQDNS DoT
+     #- https://i.233py.com/dns-query    # GEEKDNS China DoH
+     #- https://doh.opendns.com/dns-query # OpenDNS DoH
+    - tls://1.0.0.1:853
+    - 1.1.1.1 # Cloudflare DNS
   fallback-filter:
     geoip: true # 默认
     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
